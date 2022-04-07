@@ -62,5 +62,9 @@ li{
     font-size: 18px;
     font-weight: 400;
     color: #F2F2F2;
+    transition: 0.3s;
+}
+.menu_link:hover{
+    color: #fff;
 }
 
