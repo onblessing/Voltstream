@@ -31,6 +31,7 @@ body{
     font-family: "Gilroy";
     font-style: normal;
     background: linear-gradient(80.5deg, #83A4BD 11.55%, #A5A2B3 24.51%, #BA929B 33.33%, #BD8689 39.89%, #C46F6A 47.85%, #C65857 55.62%, #BF4145 65.14%, #9C2E37 75.49%, #7A262E 84.66%, #5B1E23 95.55%, #421F23 103.99%, #2D1C22 111.11%);
+    color: #F2F2F2;
 }
 a{
     text-decoration: none;
@@ -43,19 +44,55 @@ li{
     margin: 0 auto;
 }
 /* header */
+.header{
+    padding: 32px 0 40px;
+}
 .header_wrapper{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .header_nav{
     display: flex;
     align-items: center;
 }
+.logo{
+    margin-right: 85px;
+}
 .header_menu{
     display: flex;
+    align-items: center;
 }
 .header_menu li{
-    margin: 0 25px;
+    margin-right: 50px;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+.header_menu li:hover{
+    border-bottom: 1px solid #fff;
+}
+.header_menu li:last-child{
+    margin-left: 113px;
+    margin-right: 0px;
+}
+.header_menu li div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_menu li div p img{
+    margin-right: 8px;
+}
+.header_phone{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 25px;
+}
+.header_phone img{
+    margin-right: 8px;
 }
 .menu_link{
     font-family: "Gilroy";
@@ -67,4 +104,66 @@ li{
 .menu_link:hover{
     color: #fff;
 }
-
+.phone_menu_link{
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+/* section1 */
+.section1_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1_con{
+    display: flex;
+    position: relative;
+}
+.section1_content{
+    display: flex;
+    flex-direction: column;
+}
+.section1_title{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.section1_title span{
+    font-weight: 600;
+}
+.section1_subtitle{
+    font-size: 20px;
+    color: #F2F2F2;
+    margin-bottom: 50px;
+}
+.section1_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 224px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #F2323D;
+    margin-bottom: 100px;
+}
+.section1_last_content{
+    display: flex;
+    align-items: center;
+}
+.section1_last{
+    border-left: 1px solid #E9E9E9;
+    padding-left: 15px;
+    margin-right: 40px;
+}
+.section1_last:last-child{
+    margin-right: 0;
+}
+.section1_last img{
+    margin-bottom: 16px;
+}
+.section1_last_text{
+    font-size: 18px;
+}
